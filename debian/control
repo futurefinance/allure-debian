@@ -6,7 +6,7 @@ Build-Depends: cdbs, debhelper (>= 7.0.50~)
 Homepage: http://allure.qatools.ru/
 Standards-Version: 3.9.1
 
-Package: allure
+Package: fflc-allure
 Architecture: all
 Depends: ${misc:Depends}, java8-runtime | java8-runtime-headless | openjdk8-jre-headless | openjdk-8-jre | openjdk-8-jdk | oracle-java8-installer | oracle-java8-installer
 Description: Allure Report client
