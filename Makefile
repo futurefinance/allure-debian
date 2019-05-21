@@ -4,7 +4,6 @@
 ALLURE_VERSION=2.3.5
 ALLURE_URL="https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/$(ALLURE_VERSION)/allure-$(ALLURE_VERSION).zip"
 
-
 test:
 
 clean:
@@ -14,6 +13,7 @@ clean:
 	@-rm debian/stamp-makefile-install 2>/dev/null || true
 
 build:
+	@-rm -rf ./target
 	@mkdir -p ./target
 	@curl --silent --show-error --location --fail --retry 3 --output ./target/allure.zip "$(ALLURE_URL)"
 	@unzip ./target/allure.zip -d "./target"
